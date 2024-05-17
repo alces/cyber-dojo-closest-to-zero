@@ -7,7 +7,7 @@ import (
     "github.com/stretchr/testify/assert"
 )
 
-var testResults = []struct {
+var closestToZeroTestResults = []struct {
     argument []int
     expected int
 } {
@@ -19,8 +19,8 @@ var testResults = []struct {
     {[]int{-1, 2, 1, 3}, 1},
 }
 
-func TestEmptySlice(t *testing.T) {
-    for _, res := range testResults {
+func TestClosestToZero(t *testing.T) {
+    for _, res := range closestToZeroTestResults {
         assert.Equal(t, res.expected, closestToZero(res.argument), fmt.Sprintf("slice: %#v", res.argument))
     }
 }
