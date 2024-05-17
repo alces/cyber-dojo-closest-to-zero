@@ -19,8 +19,22 @@ var closestToZeroTestResults = []struct {
     {[]int{-1, 2, 1, 3}, 1},
 }
 
+var newClosestTestResults = []struct {
+    champion  int
+    candidate int
+    expected bool
+} {
+    {2, 1, true},
+}
+
 func TestClosestToZero(t *testing.T) {
     for _, res := range closestToZeroTestResults {
         assert.Equal(t, res.expected, closestToZero(res.argument), fmt.Sprintf("slice: %#v", res.argument))
+    }
+}
+
+func TestNewClosest(t *testing.T) {
+for _, res := range newClosestTestResults {
+        assert.Equal(t, res.expected, newClosest(res.champion, res.candidate), fmt.Sprintf("champion: %d candidate: %d", res.champion, res.candidate))
     }
 }

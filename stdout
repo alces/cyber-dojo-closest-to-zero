@@ -1,2 +1,11 @@
-PASS
-ok  	_/sandbox	0.003s
+--- FAIL: TestNewClosest (0.00s)
+    closest_to_zero_test.go:38: 
+        	Error Trace:	closest_to_zero_test.go:38
+        	Error:      	Not equal: 
+        	            	expected: true
+        	            	actual  : false
+        	Test:       	TestNewClosest
+        	Messages:   	champion: 2 candidate: 1
+FAIL
+exit status 1
+FAIL	_/sandbox	0.014s

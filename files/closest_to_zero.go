@@ -21,3 +21,7 @@ func closestToZero(nums []int) (closest int) {
 
     return
 }
+
+func newClosest(champion, candidate int) bool {
+    return false
+}
