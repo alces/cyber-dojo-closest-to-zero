@@ -20,13 +20,15 @@ func closestToZero(nums []int) (closest int) {
     return
 }
 
-func newClosest(champion, candidate int) bool {
+func newClosest(champion, candidate int) (answer bool) {
     currentDistance := math.Abs(float64(candidate))
     closestDistance := math.Abs(float64(champion))
 
     if currentDistance < closestDistance {
-        return true
+        answer = true
+    } else if currentDistance == closestDistance {
+        answer = candidate > 0 && champion < 0
     }
-    
-    return currentDistance == closestDistance && candidate > 0 && champion < 0
+     
+    return
 }
