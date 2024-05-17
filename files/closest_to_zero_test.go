@@ -25,6 +25,7 @@ var newClosestTestResults = []struct {
     expected bool
 } {
     {2, 1, true},
+    {2, 3, false},
 }
 
 func TestClosestToZero(t *testing.T) {
