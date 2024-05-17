@@ -12,7 +12,8 @@ func closestToZero(nums []int) (closest int) {
     closest = nums[0]
     
     for _, v := range nums[1:] {
-        if int(math.Abs(float64(v))) < closest {
+        distance := int(math.Abs(float64(v)))
+        if distance < closest || (distance == closest && v > 0 && closest < 0) {
             closest = v
         }
     }
