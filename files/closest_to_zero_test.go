@@ -37,7 +37,7 @@ func TestClosestToZero(t *testing.T) {
 }
 
 func TestNewClosest(t *testing.T) {
-for _, res := range newClosestTestResults {
+    for _, res := range newClosestTestResults {
         assert.Equal(t, res.expected, newClosest(res.champion, res.candidate), fmt.Sprintf("champion: %d candidate: %d", res.champion, res.candidate))
     }
 }
