@@ -1,5 +1,5 @@
 package ctz
 
-func closest_to_zero(nums []int) int {
+func closestToZero(nums []int) int {
     return 1
 }

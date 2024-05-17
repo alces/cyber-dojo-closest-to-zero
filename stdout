@@ -1,1 +1,10 @@
-FAIL	_/sandbox [build failed]
+--- FAIL: TestEmptySlice (0.00s)
+    closest_to_zero_test.go:9: 
+        	Error Trace:	closest_to_zero_test.go:9
+        	Error:      	Not equal: 
+        	            	expected: 0
+        	            	actual  : 1
+        	Test:       	TestEmptySlice
+FAIL
+exit status 1
+FAIL	_/sandbox	0.002s
