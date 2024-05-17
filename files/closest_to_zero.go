@@ -1,5 +1,9 @@
 package ctz
 
+import (
+    "math"
+)
+
 func closestToZero(nums []int) (closest int) {
     if len(nums) == 0 {
         return
@@ -8,7 +12,7 @@ func closestToZero(nums []int) (closest int) {
     closest = nums[0]
     
     for _, v := range nums[1:] {
-        if abs(v) < closest {
+        if math.Abs(v) < closest {
             closest = v
         }
     }
