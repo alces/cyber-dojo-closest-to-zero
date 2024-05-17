@@ -1,2 +1,0 @@
-# _/sandbox [_/sandbox.test]
-./closest_to_zero.go:15:35: invalid operation: math.Abs(float64(v)) < closest (mismatched types float64 and int)
