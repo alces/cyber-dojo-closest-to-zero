@@ -16,6 +16,7 @@ var testResults = []struct {
     {[]int{2, 1}, 1},
     {[]int{2, -1, 3}, -1},
     {[]int{1, 2, -1, 3}, 1},
+    {[]int{-1, 2, 1, 3}, 1},
 }
 
 func TestEmptySlice(t *testing.T) {
