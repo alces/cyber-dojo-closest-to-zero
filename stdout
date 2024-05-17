@@ -1,11 +1,1 @@
---- FAIL: TestEmptySlice (0.00s)
-    closest_to_zero_test.go:20: 
-        	Error Trace:	closest_to_zero_test.go:20
-        	Error:      	Not equal: 
-        	            	expected: 2
-        	            	actual  : 1
-        	Test:       	TestEmptySlice
-        	Messages:   	slice: []int{2}
-FAIL
-exit status 1
-FAIL	_/sandbox	0.008s
+FAIL	_/sandbox [build failed]
