@@ -12,6 +12,7 @@ var testResults = []struct {
     expected int
 } {
     {[]int{}, 0},
+    {[]int{2}, 2},
 }
 
 func TestEmptySlice(t *testing.T) {
